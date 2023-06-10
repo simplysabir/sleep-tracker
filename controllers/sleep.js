@@ -4,10 +4,10 @@ const addSleep = async (req,res) => {
 try {
     const {date, sleeping_time, waking_time, total_sleep} = req.body;
     Sleep.create({
-        date,
-        sleeping_time,
-        waking_time,
-        total_sleep
+        date : date,
+        sleeping_time : sleeping_time,
+        waking_time : waking_time,
+        total_sleep : total_sleep
     });
 
     return res.stauts(200).json({success : true, msg : "Record Added"});

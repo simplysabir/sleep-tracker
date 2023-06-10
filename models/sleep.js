@@ -7,11 +7,11 @@ const sleepSchema = mongoose.Schema({
         unique : true,
     },
     sleeping_time : {
-        type : Number,
+        type : String,
         required : true
     },
     waking_time : {
-        type : Number,
+        type : String,
         required : true,
     },
     total_sleep : {
