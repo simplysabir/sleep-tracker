@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const sleepSchema = mongoose.Schema({
     date : {
-        type : Number,
+        type : String,
         required : true,
         unique : true,
     },
